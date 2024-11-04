@@ -1,1 +1,40 @@
-
+appName: demo-application
+appUniqueId: ravis/demo-application
+appInfo:
+  description: this is demo application
+  appVersion: 1.0.0
+  appRepoUrl: https://github.com/rawatSingh2022/demo-application.git
+  appIconUrl: ''
+  appAuthorUserId: ravis
+  forkedFrom: ''
+technicalInfo:
+  supportedLanguages: []
+  supportedFrameworks: []
+  secrets: []
+  services: []
+  knowledgebases: []
+  instruction: []
+usage:
+  develop:
+    agents: []
+    layout: ''
+    run:
+      - shell:
+          command: npm start
+  install:
+    steps:
+      - command:
+          type: shell
+          description: install
+          command: npm install
+    customInstallationAgent:
+      agent: ''
+      enabled: false
+  appUse:
+    agents: []
+    layout: ''
+    prerunsteps: |-
+      - shell:
+             command: npm run start
+    appPreview:
+      type: ''
